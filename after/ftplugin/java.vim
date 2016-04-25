@@ -1,4 +1,4 @@
-if gradle#isGradleProject()
+if gradle#isGradleProject() && exists("g:vim_android_gradle_autosync") && g:vim_android_gradle_autosync
   call gradle#sync()
 endif
 
